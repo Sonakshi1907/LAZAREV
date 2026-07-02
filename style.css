@@ -84,7 +84,7 @@ body {
   background-color: #f0f5f0;
 }
 .home-container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: black;
 
@@ -326,6 +326,7 @@ h1 {
   box-shadow: 0 0 30px rgb(64 245 95);
   background-color: #dee7de;
   display: flex;
+  overflow: hidden;
 }
 
 .move img {
@@ -413,7 +414,7 @@ h1 {
 }
 
 .footer {
-  width: 70%;
+  width: 100%;
   height: 79vh;
   background: #000000;
   padding: 4vw;
@@ -572,4 +573,267 @@ h1 {
   background: #6bff88;
   color: #111;
   transform: translateY(-5px);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    width: 100vw;
+    height: 2vh;
+    padding: 2vw 1vw;
+    align-items: center;
+    display: flex;
+    gap: 1vw;
+  }
+
+  .navbar.active {
+    height: auto;
+    padding-bottom: 5vw;
+  }
+
+  .navbar h3 {
+    font-size: 4vw;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .nav-part2 {
+    gap: 1.5vw;
+    font-size: 1.2vw;
+  }
+
+  #nav-button {
+    width: 15vw;
+    padding: 2vw;
+    font-size: 1.6vw;
+  }
+
+  /* Home */
+
+  .home-container {
+    width: 100%;
+    height: 70vh;
+    padding: 0 5vw;
+  }
+
+  h1 {
+    font-size: 14vw;
+    text-align: center;
+    line-height: 1.05;
+  }
+
+  #productimg {
+    width: 12vw;
+  }
+
+  .home-content p {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  .content1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+  }
+
+  .content1 h5 {
+    font-size: 3vw;
+    padding: 2vw 5vw;
+  }
+
+  /* Services */
+
+  .container {
+    height: auto;
+    padding: 15vw 5vw;
+    gap: 12vw;
+  }
+
+  .container h1 {
+    font-size: 6vw;
+  }
+
+  .main-box {
+    width: 40%;
+    height: 18vh;
+    padding: 1.4vw;
+    font-size: 1.5vw;
+    align-items: center;
+  }
+
+  /* Work  */
+
+  .Our-works {
+    padding: 10vw 5vw;
+    gap: 12vw;
+  }
+
+  .wheading h1 {
+    font-size: 8vw;
+  }
+
+  .work1 {
+    flex-direction: column;
+    height: auto;
+    gap: 6vw;
+    align-items: center;
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .video1,
+  .video2,
+  .video3 {
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+  }
+
+  .video-content {
+    width: 70vw;
+    padding: 0;
+    line-height: 1.8;
+    height: 20;
+    padding-left: 14vw;
+    align-self: start;
+  }
+
+  .video-content h2 {
+    font-size: 3vw;
+    width: 70vw;
+  }
+
+  .video-content p {
+    font-size: 1.7vw;
+    width: 70vw;
+  }
+
+  /* Reviews */
+
+  .reviews {
+    height: 80vh;
+    padding: 6vw 0;
+  }
+
+  .review-cards {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card {
+    position: absolute;
+    width: 50%;
+    height: 20vh;
+    padding: 2vw;
+    font-size: 2vw;
+  }
+
+  .card-image {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #moving-div {
+    width: 100%;
+    height: 7vh;
+  }
+
+  .move img {
+    width: 18vw;
+  }
+
+  /* Contact */
+
+  #contact {
+    height: auto;
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .lower-footer {
+    flex-direction: column;
+    gap: 8vw;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 6vw;
+  }
+
+  .footer-container {
+    grid-template-columns: 1, 2fr;
+    gap: 8vw;
+  }
+
+  .footer-column h3 {
+    font-size: 2.5vw;
+  }
+
+  .footer-column a {
+    font-size: 2vw;
+  }
+
+  .contact-card {
+    width: 100%;
+    height: auto;
+    padding: 8vw;
+    margin: 2vw 6vw;
+  }
+
+  .contact-card h1 {
+    font-size: 9vw;
+    text-align: start;
+  }
+
+  .contact-card p {
+    font-size: 4vw;
+  }
+
+  .tag {
+    font-size: 3vw;
+  }
+
+  .work-btn {
+    height: 12vw;
+    font-size: 4vw;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .socials a {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .footer-heading {
+    height: auto;
+    padding: 5vw;
+  }
+
+  .heading {
+    font-size: 7vw;
+  }
 }
